@@ -3,6 +3,8 @@ import sys
 
 a = AdminClient({'bootstrap.servers': 'localhost:29092'})
 
+# this is a test
+
 new_topics = [NewTopic(topic, num_partitions=3, replication_factor=1) for topic in ["topic3", "topic4"]]
 # Note: In a multi-cluster production scenario, it is more typical to use a replication_factor of 3 for durability.
 
